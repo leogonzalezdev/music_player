@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap');
+
+:root{
+    --dark:#171820;
+    --blue:#3C4553;
+    --blue-hover:#212332;
+    --grey-hover:#9fa5ae;
+    --green:#3BEC92;
+    --green-hover:#30ac6c;
+    --red:#d63437;
+    --grey:#eef3f7;
+    --white: #ffffff;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--blue-hover);
+    color: var(--white);
+    margin: 0;
+    font-size: 16px;
+}
+/* Header */
+.header{
+    font-size: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--blue-hover);
+}
+.header .logo h2{
+    cursor: pointer;
+}
+.header .logo span{
+  color: var(--green);
+}
+.header .navbar{
+    display: flex;
+}
+/* Options Menu */
+.settings-container .menu-label{
+    border:2px solid var(--green);
+    border-radius: 50%;
+    padding: .8rem;
+    color: var(--white);
+    font-size: 1.3rem;
+    transition: all 600ms;
+}
+.settings-container .menu-label:hover{
+    background-color: var(--green);
+}
+.settings{
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    display:flex;
+    transition: all 600ms;
+}
+
+.settings-container:hover .settings{
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+    background: var(--blue);
+    border-radius: 10px;
+    padding: .5rem 1.3rem;
+}
+.settings a{
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--grey);
+    display: block;
+}
+.settings a:hover{
+    border-radius: 25px;
+    background: var(--grey-hover);
+}
+.optionsBtn{
+    font-size: 1.5rem;
+    position: relative;
+    background: none;
+    border: none;
+    color: var(--white);
+}
+.optionsBtn:hover{
+    color: var(--green);
+}
+.header .navbar input{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+}
+.header .navbar label{
+  margin:1rem;
+  padding:8px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.header .navbar label:hover{
+    color: var(--green);
+}
+/* Player */
+.player-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* PLayer */
+.player{
+    height: auto;
+    margin: 0 3rem;
+    padding: 1.9rem 2rem;
+    background:linear-gradient(var(--blue), var(--dark));
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(48, 172, 108,.9);
+    
+}
+/* Title */
+.title{
+    margin-top: 0;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+/* Cover */
+.cover{
+    width: 240px;
+    height: auto;
+    border-radius: .3rem;
+    display: block;
+    margin: 1.1rem auto 2rem auto;
+    transition: all 1s;
+}
+
+/* Progress */
+.progress-container{
+    height: .5rem;
+    background: var(--blue);
+    border-radius: 25px;
+    cursor: pointer;
+}
+.progress{
+    background: var(--green);
+    width: 0%;
+    height: 100%;
+    border-radius: 25px;
+}
+/* song-timer */
+.song-timer{
+    display: flex;
+    justify-content: space-between;
+}
+/* Controls */
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.controls button{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+.controls i{
+    color: var(--white);
+    padding: .5rem;
+    font-size: 1.5rem;
+    transition: all 400ms;
+}
+.controls #play{
+    font-size: 1.9rem;
+    padding: .9rem;
+    background: var(--green-hover);
+    border:.6rem solid var(--green);
+    border-radius: 50%;
+    transition: all 1s;
+
+}
+.controls i:hover{
+    color: var(--green-hover);
+}
+.controls #play:hover{
+    color: var(--white);
+    background: var(--green);
+    border:.6rem solid var(--green-hover);
+    border-radius: 50%;
+
+}
+
+/* Songs */
+.songs{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* Ocultar Canciones */
+    display: none;
+    opacity: 0;
+    transition: all 1s;
+}
+.songs li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: .5rem;
+}
+.songs a{
+    color: var(--white);
+    text-decoration: none;
+    transition: all 500ms;
+}
+.songs a:hover{
+    color: var(--green-hover);
+}
+.active{
+    font-weight:bolder;
+    font-size: 1.7rem;
+}
+
+ @media (max-width:768px) {
+    .header{
+        padding: .6rem 1rem;
+    }
+    .player{
+        padding: 1.3rem .5rem;
+        margin: 0;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="img/favicon.ico" rel="icon" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header id="header" class="header">
+        <div class="logo">
+            <h2><span>Gleo</span> Music Player</h2>
+        </div>
+    </header>
+    <!-- Player -->
+    <div class="player-container">
+        <main class="player">
+            <!-- Song Title -->
+            <h1 class="title" id="title">Title Song</h1>
+            <!-- Song Cover -->
+            <img src="img/vector-music-icon.jpg" alt="" class="cover" id="cover">
+            <!-- Audio HTML media Element -->
+            <audio src="" id="audio"></audio>
+            <!-- Progress bar -->
+            <div class="progress-container" id="progress-container">
+                <section id="progress" class="progress"></section>
+            </div>
+            <div class="song-timer">
+                <span class="current-time" id="current-time">0:00</span>
+                <span class="max-duration" id="max-duration">0:00</span>
+              </div>
+            <!-- Controls -->
+            <section class="controls">
+                <button class="repeat"><i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i></button>
+                <button class="prev"><i id="prev" class="fas fa-backward"></i></button>
+                <button class="play"><i id="play" class="fas fa-play"></i></button>
+                <button class="next"><i id="next" class="fas fa-forward"></i></button>
+                <button class="more-music"><i id="moreMusic" class="fas fa-list-ul"></i></button>
+            </section>
+            <!-- Songs List -->
+            <ul class="songs" id="songs">
+
+            </ul>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
