@@ -16,20 +16,6 @@ const songList = [
         cover: 'cover3.jpg'
     }
 ]
-// API DE PRUEBAS
-// fetch("https://theaudiodb.p.rapidapi.com/searchtrack.php?s=coldplay&t=yellow", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-host": "theaudiodb.p.rapidapi.com",
-// 		"x-rapidapi-key": "f86e939135mshf2cbedc4a5edc07p1d0028jsn449fafe422a6"
-// 	}
-// })
-// .then(response => {
-// 	console.log(response.url);
-// })
-// .catch(err => {
-// 	console.error(err);
-// });
 
 // Cancion Actual
 let actualSong = null;
@@ -137,12 +123,13 @@ function updateProgress(event) {
     maxDuration.innerText = `${totalMin}:${totalSec}`;
     
 }
+
 // Barra actualizable
 function setProgress(event) {
-    const totalWidth = this.offsetWidth
-    const progressWidth = event.offsetX
-    const current = (progressWidth / totalWidth) * audio.duration
-    audio.currentTime = current
+    const totalWidth = this.offsetWidth;
+    const progressWidth = event.offsetX;
+    const current = (progressWidth / totalWidth) * audio.duration;
+    audio.currentTime = current;
 }
 // Actualizar controles
 function updateControls() {
