@@ -108,7 +108,7 @@ body{
 /* PLayer */
 .player{
     position: relative;
-    width: 384px;
+    max-width: 348px;
     height: 62vh;
     margin: 0 3rem;
     padding: 1.9rem;
@@ -196,8 +196,9 @@ body{
     position: absolute;
     background: linear-gradient(45deg, var(--blue), var(--blue-hover));
     overflow: auto;
-    width: 384px;
-    height: 48vh;
+    width: 100vw;
+    max-width: 348px;
+    height: 66vh;
     left: 0;
     top: -3%;
     box-shadow: 5px 5px 5px black;
