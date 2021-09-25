@@ -11,6 +11,16 @@ const songList = [
         cover: 'cover2.jpg'
     },
     {
+        title: 'Spirit of Fire',
+        file: 'Spirit of Fire.mp3',
+        cover: 'cover2.jpg'
+    },
+    {
+        title: 'Spirit of Fire',
+        file: 'Spirit of Fire.mp3',
+        cover: 'cover2.jpg'
+    },
+    {
         title: 'The Best Time',
         file: 'The Best Time.mp3',
         cover: 'cover3.jpg'
@@ -29,6 +39,7 @@ const prev = document.getElementById('prev');
 const play = document.getElementById('play');
 const next = document.getElementById('next');
 const moreMusic = document.getElementById('moreMusic'); 
+const close = document.querySelector('#close');
 const progress = document.getElementById('progress');
 const currTime = document.getElementById('current-time');
 const maxDuration = document.getElementById('max-duration');
@@ -37,24 +48,10 @@ progressContainer.addEventListener("click", setProgress);
 
 // Escuchar el elemento audio
 audio.addEventListener('timeupdate', updateProgress);
-
+//Escuchar el elemento close
+close.addEventListener('click', () => songs.classList.remove('show'));
 // Escuchar el elemento More Music
-moreMusic.addEventListener('click', () =>{
-    if( isOpen == false ){
-        songs.style.display = 'block';
-        songs.style.opacity = 1;
-        isOpen = true;
-        moreMusic.classList.remove('fa-list-ul');
-        moreMusic.classList.add('fa-times');
-    } else {
-        songs.style.display = 'none';
-        songs.style.opacity = 0;
-        isOpen = false;
-        moreMusic.classList.add('fa-list-ul');
-        moreMusic.classList.remove('fa-times');
-    }
-    
-});
+moreMusic.addEventListener('click', () => songs.classList.add('show'));
 //Escuchar click's del boton play
 play.addEventListener('click', () => {
     if (audio.paused) {

@@ -23,36 +23,35 @@
         </div>
     </header>
     <!-- Player -->
-    <div class="player-container">
-        <main class="player">
-            <!-- Song Title -->
-            <h1 class="title" id="title">Title Song</h1>
-            <!-- Song Cover -->
-            <img src="img/vector-music-icon.jpg" alt="" class="cover" id="cover">
-            <!-- Audio HTML media Element -->
-            <audio src="" id="audio"></audio>
-            <!-- Progress bar -->
-            <div class="progress-container" id="progress-container">
-                <section id="progress" class="progress"></section>
-            </div>
-            <div class="song-timer">
-                <span class="current-time" id="current-time">0:00</span>
-                <span class="max-duration" id="max-duration">0:00</span>
-              </div>
-            <!-- Controls -->
-            <section class="controls">
-                <button class="repeat"><i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i></button>
-                <button class="prev"><i id="prev" class="fas fa-backward"></i></button>
-                <button class="play"><i id="play" class="fas fa-play"></i></button>
-                <button class="next"><i id="next" class="fas fa-forward"></i></button>
-                <button class="more-music"><i id="moreMusic" class="fas fa-list-ul"></i></button>
-            </section>
-            <!-- Songs List -->
-            <ul class="songs" id="songs">
-
-            </ul>
-        </main>
-    </div>
+    <main class="player">
+        <!-- Song Title -->
+        <h1 class="title" id="title">Title Song</h1>
+        <!-- Song Cover -->
+        <img src="img/vector-music-icon.jpg" alt="" class="cover" id="cover">
+        <!-- Audio HTML media Element -->
+        <audio src="" id="audio"></audio>
+        <!-- Progress bar -->
+        <div class="progress-container" id="progress-container">
+            <section id="progress" class="progress"></section>
+        </div>
+        <div class="song-timer">
+            <span class="current-time" id="current-time">0:00</span>
+            <span class="max-duration" id="max-duration">0:00</span>
+        </div>
+        <!-- Controls -->
+        <section class="controls">
+            <button class="repeat"><i id="repeat-plist" class="material-icons"
+                    title="Playlist looped">repeat</i></button>
+            <button class="prev"><i id="prev" class="fas fa-backward"></i></button>
+            <button class="play"><i id="play" class="fas fa-play"></i></button>
+            <button class="next"><i id="next" class="fas fa-forward"></i></button>
+            <button class="more-music"><i id="moreMusic" class="fas fa-list-ul"></i></button>
+        </section>
+        <!-- Songs List -->
+        <ul class="songs" id="songs">
+            <div class="close-container"><b>Songs List</b><i id="close" class="fas fa-chevron-down"></i></div>
+        </ul>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
