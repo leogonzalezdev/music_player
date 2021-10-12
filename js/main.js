@@ -11,19 +11,19 @@ const songList = [
         cover: 'cover2.jpg'
     },
     {
-        title: 'Spirit of Fire',
-        file: 'Spirit of Fire.mp3',
-        cover: 'cover2.jpg'
+        title: 'High Fidelity',
+        file: 'High Fidelity.mp3',
+        cover: 'cover3.jpg'
     },
     {
-        title: 'Spirit of Fire',
-        file: 'Spirit of Fire.mp3',
-        cover: 'cover2.jpg'
+        title: 'Neon Lights',
+        file: 'Neon Lights.mp3',
+        cover: 'cover4.png'
     },
     {
         title: 'The Best Time',
         file: 'The Best Time.mp3',
-        cover: 'cover3.jpg'
+        cover: 'cover5.jpg'
     }
 ]
 
